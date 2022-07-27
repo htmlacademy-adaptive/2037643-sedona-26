@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Иван Старцев](https://up.htmlacademy.ru/adaptive/26/user/2037643).
-* Наставник: `Неизвестно`.
+* Наставник: [Кристина Новикова](https://htmlacademy.ru/profile/stina).
 
 ---
 
