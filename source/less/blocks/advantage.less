@@ -1,0 +1,66 @@
+.advantage__item--big{
+  background-color: #81B3D2;
+}
+
+.advantage__item-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantage__item-text{
+  text-transform: uppercase;
+}
+
+.advantage__item--big-title{
+  color: #FFFFFF;
+}
+
+.advantage__item--big-text{
+  color: #FFFFFF;
+}
+
+.advantage__item--icon-house::after{
+  content: "";
+  position: absolute;
+  background-image: url(../../img/icon-house.svg);
+  width: 39px;
+  height: 37px;
+}
+
+.advantage__item--icon-burger::after{
+  content: "";
+  position: absolute;
+  background-image: url(../../img/icon-burger.svg);
+  width: 40px;
+  height: 35px;
+}
+
+.advantage__item--icon-gift::after{
+  content: "";
+  position: absolute;
+  background-image: url(../../img/icon-gift.svg);
+  width: 39px;
+  height: 37px;
+}
+
+.advantage__list{
+  counter-reset: advantage;
+}
+
+.advantage__item--counter{
+  background: #EEEEEE;
+}
+
+.advantage__item--counter:before{
+  counter-increment: advantage;
+  content: "— " counter(advantage) " —";
+}
+
+.advantage__item--big-counter:before{
+  counter-increment: advantage;
+  content: "— " counter(advantage) " —";
+  color: #FFFFFF;
+}
