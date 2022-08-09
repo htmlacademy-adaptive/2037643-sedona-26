@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
 
-  <div class="page__wrapper">
     <header class="main-header">
-      <a class="logo-sedona main-header__logo-sedona" href="#">
-        <img src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__open" type="button">
-          <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
-          </svg>
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <button class="main-nav__close visually-hidden" type="button">
-          <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff" />
-          </svg>
-          <span class="visually-hidden">Закрыть меню.</span>
-        </button>
-        <ul class="main-nav__list visually-hidden">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="main-nav">
+          <button class="main-nav__open" type="button">
+            <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+            </svg>
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <button class="main-nav__close visually-hidden" type="button">
+            <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff" />
+            </svg>
+            <span class="visually-hidden">Закрыть меню.</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__item--margin-left">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo-sedona main-header__logo-sedona" href="#">
+          <img src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+        </a>
     </header>
+
     <main class="main-page">
         <h1 class="visually-hidden">Седона</h1>
 
         <section class="promo">
-          <h2 class="visually-hidden">Промо</h2>
-          <img class="promo-text" src="img/promo_text.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+            <h2 class="visually-hidden">Промо</h2>
+            <img class="promo-text" src="img/promo_text.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
         </section>
 
         <section class="advantage">
@@ -80,11 +80,11 @@
             </div>
 
             <div class="advantage__item advantage__item--big advantage__item--big-counter">
+              <img src="img/devil_bridge.jpg" width="320" height="260" alt="Мост дьявола.">
               <div class="advantage__item-wrapper">
                 <h3 class="advantage__item-title advantage__item--big-title">там есть мост дьявола</h3>
                 <p class="advantage__item-text advantage__item--big-text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
-              <img src="img/devil_bridge.jpg" width="320" height="260" alt="Городок Седоны.">
             </div>
 
             <div class="advantage__item advantage__item--counter">
@@ -104,7 +104,7 @@
 
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
-          <b class="hotel-search__title">Заинтересовались?</b>
+          <p class="hotel-search__title">Заинтересовались?</p>
           <p class="hotel-search__text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="hotel-search__button" type="button">Найти Гостиницу</button>
         </section>
@@ -157,7 +157,6 @@
         </svg>
       </a>
     </footer>
-  </div>
 
 </body>
 

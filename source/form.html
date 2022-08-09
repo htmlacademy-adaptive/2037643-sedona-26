@@ -2,47 +2,49 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить отзыв</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page">
-  <div class="page__wrapper">
-    <header class="main-header">
-      <a class="logo-sedona main-header__logo-sedona" href="#">
-        <img src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны.">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__open" type="button">
-          <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
-          </svg>
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <button class="main-nav__close visually-hidden" type="button">
-          <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff" />
-          </svg>
-          <span class="visually-hidden">Закрыть меню.</span>
-        </button>
-        <ul class="main-nav__list visually-hidden">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+
+  <header class="main-header">
+    <nav class="main-nav">
+      <button class="main-nav__open" type="button">
+        <svg width="23" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" fill="#81B3D2" />
+        </svg>
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+      <button class="main-nav__close visually-hidden" type="button">
+        <svg width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" fill="#fff" />
+        </svg>
+        <span class="visually-hidden">Закрыть меню.</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item main-nav__item--margin-left">
+          <a class="main-nav__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="logo-sedona main-header__logo-sedona" href="index.html">
+      <img src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+    </a>
+</header>
 
     <main class="form-page">
       <h1 class="visually-hidden">Оставить отзыв</h1>
+
       <section class="promo-mini">
         <h2 class="visually-hidden">Промо</h2>
         <img class="promo-mini__img" src="img/form_promo_text.svg" width="229" height="39" alt="Надпись SEDONA.">
@@ -54,7 +56,7 @@
           <p class="form-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </header>
         <form class="form-review__form" action="#" method="post">
-          <fieldset class="form-review__fieldset">
+          <fieldset class="form-review__fieldset form-review__fieldset--user-name">
             <legend class="form-review__legend">Представьтесь:</legend>
             <label class="form-review__label" for="name">Имя*:</label>
             <input class="form-review__input-text" type="text" id="name">
@@ -63,39 +65,59 @@
             <label class="form-review__label" for="patronymic">Отчество:</label>
             <input class="form-review__input-text" type="text" id="patronymic">
           </fieldset>
-          <fieldset class="form-review__fieldset">
+          <fieldset class="form-review__fieldset form-review__fieldset--contacts">
             <legend class="form-review__legend">Контактная информация:</legend>
             <label class="form-review__label" for="tel">Контактный телефон*:</label>
             <input class="form-review__input-text" type="tel" id="tel" placeholder="Введите телефон">
             <label class="form-review__label" for="email">Электронная почта*:</label>
             <input class="form-review__input-text" type="email" id="email" placeholder="Введите e-mail">
           </fieldset>
-          <fieldset class="form-review__fieldset">
+          <fieldset class="form-review__fieldset form-review__fieldset--impression">
             <legend class="form-review__legend">Ваше Общее впечатление:</legend>
-            <input class="form-review__radio" type="radio" id="positive" checked>
-            <label class="form-review__label-thick" for="positive">Скорее положительное</label>
-            <input class="form-review__radio" type="radio" id="negative">
-            <label class="form-review__label-thick" for="negative">Скорее отрицательное</label>
-            <input class="form-review__radio" type="radio" id="no_answer">
-            <label class="form-review__label-thick" for="no_answer">Затрудняюсь ответить</label>
+            <div class="form-review__fieldset-wrapper form-review__fieldset-wrapper--impression">
+              <p>
+                <input class="form-review__radio" type="radio" id="positive" checked>
+                <label class="form-review__label-thick" for="positive">Скорее положительное</label>
+              </p>
+              <p>
+                <input class="form-review__radio" type="radio" id="negative">
+                <label class="form-review__label-thick" for="negative">Скорее отрицательное</label>
+              </p>
+              <p>
+                <input class="form-review__radio" type="radio" id="no_answer">
+                <label class="form-review__label-thick" for="no_answer">Затрудняюсь ответить</label>
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form-review__fieldset">
+          <fieldset class="form-review__fieldset form-review__fieldset--attraction">
             <legend class="form-review__legend">Посещенные достопримечательности:</legend>
-            <input class="form-review__checkbox" type="checkbox" id="Devils_Bridge" checked>
-            <label class="form-review__label-thick" for="Devils_Bridge">Мост Дьявола</label>
-            <input class="form-review__checkbox" type="checkbox" id="Mount_Bell" checked>
-            <label class="form-review__label-thick" for="Mount_Bell">Гора-Колокол</label>
-            <input class="form-review__checkbox" type="checkbox" id="slide_park" checked>
-            <label class="form-review__label-thick" for="slide_park">Слайд-парк</label>
-            <input class="form-review__checkbox" type="checkbox" id="red_rocks">
-            <label class="form-review__label-thick" for="red_rocks">Красные скалы</label>
+            <div class="form-review__fieldset-wrapper form-review__fieldset-wrapper--attraction">
+              <p>
+                <input class="form-review__checkbox" type="checkbox" id="Devils_Bridge" checked>
+                <label class="form-review__label-thick" for="Devils_Bridge">Мост Дьявола</label>
+              </p>
+              <p>
+                <input class="form-review__checkbox" type="checkbox" id="Mount_Bell" checked>
+                <label class="form-review__label-thick" for="Mount_Bell">Гора-Колокол</label>
+              </p>
+              <p>
+                <input class="form-review__checkbox" type="checkbox" id="slide_park" checked>
+                <label class="form-review__label-thick" for="slide_park">Слайд-парк</label>
+              </p>
+              <p>
+                <input class="form-review__checkbox" type="checkbox" id="red_rocks">
+                <label class="form-review__label-thick" for="red_rocks">Красные скалы</label>
+              </p>
+            </div>
           </fieldset>
-          <fieldset class="form-review__fieldset">
+          <fieldset class="form-review__fieldset form-review__fieldset--emotions">
             <legend class="form-review__legend">Опишите свои эмоции:</legend>
             <textarea class="form-review__textarea" name="text" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
           </fieldset>
-          <button class="form-review__button-submit" type="submit">Отправить отзыв</button>
-          <p class="form-review__bottom-inscription">* — обязательные поля</p>
+          <div class="form-review__form-bottom">
+            <button class="form-review__button-submit" type="submit">Отправить отзыв</button>
+            <p class="form-review__bottom-inscription">* — обязательные поля</p>
+          </div>
         </form>
       </section>
     </main>
@@ -105,7 +127,7 @@
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__icon"width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="social-list__icon" width="24" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M23.45.948c.166-.546 0-.948-.795-.948H20.03c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.191-.418-.738V.948c0-.656-.184-.948-.74-.948H9.151c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513v3.798c0 .833-.153.984-.487.984-.89 0-3.055-3.211-4.34-6.885C4.45.288 4.198 0 3.527 0H.9C.15 0 0 .347 0 .73c0 .682.89 4.07 4.145 8.551C6.315 12.341 9.37 14 12.153 14c1.669 0 1.875-.368 1.875-1.003v-2.313c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667C19.11 13.216 19.403 14 20.405 14h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.491-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
                 fill="#fff" />
@@ -115,7 +137,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__icon"width="22" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="social-list__icon" width="22" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="m21.44 1.622-3.17 14.944c-.239 1.055-.862 1.317-1.748.82l-4.828-3.557-2.33 2.24c-.258.259-.473.474-.97.474l.347-4.917 8.948-8.086c.39-.347-.084-.54-.604-.192L6.022 10.314 1.26 8.823C.224 8.5.205 7.787 1.476 7.29L20.103.113c.863-.323 1.617.192 1.336 1.51Z"
                 fill="#fff" />
@@ -125,7 +147,7 @@
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <svg class="social-list__icon"width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="social-list__icon" width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.181 0H2.813C1.306 0 0 1.3 0 2.8v8.3C0 12.7 1.306 14 2.813 14h14.368c1.608 0 2.814-1.3 2.814-2.8V2.8c.1-1.5-1.206-2.8-2.814-2.8ZM7.033 10.4V3.6L13.866 7l-6.833 3.4Z"
                 fill="#fff" />
@@ -145,7 +167,7 @@
 
     <div class="modal visually-hidden">
       <div class="modal-content modal-failure">
-          <b class="modal__title">Что-то пошло не так!</b>
+          <p class="modal__title">Что-то пошло не так!</p>
           <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="modal-failure__button" type="button">Ок</button>
       </div>
@@ -153,12 +175,11 @@
 
     <div class="modal visually-hidden">
       <div class="modal-content modal-succes">
-        <b class="modal__title">Ваш отзыв отправлен!</b>
+        <p class="modal__title">Ваш отзыв отправлен!</p>
         <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <button class="modal-succes__button" type="button">Закрыть окно</button>
       </div>
     </div>
 
-    </div>
   </body>
   </html>
