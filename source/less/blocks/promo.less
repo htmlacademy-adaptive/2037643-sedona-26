@@ -3,8 +3,19 @@
   background-image: url(../../img/promo-divider.png) , url(../../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-position: bottom, center;
+  width: @mobile-width;
+  margin: 0 auto;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
 }
 
 .promo-text{
-  margin: 90px 19px 85px 19px;
+  margin: 85px auto 85px auto;
 }

@@ -1,11 +1,28 @@
+.hotel-search{
+  background-color: #FFFFFF;
+  width: @mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .hotel-search__title{
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 .hotel-search__text{
   text-transform: uppercase;
+  text-align: center;
 }

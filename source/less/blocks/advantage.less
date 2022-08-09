@@ -1,5 +1,24 @@
+.advantage{
+  width: @mobile-width;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-width;
+  }
+}
+
 .advantage__item--big{
   background-color: #81B3D2;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1 / 4;
+    display: flex;
+  }
 }
 
 .advantage__item-title{
@@ -48,6 +67,12 @@
 
 .advantage__list{
   counter-reset: advantage;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .advantage__item--counter{
@@ -60,6 +85,7 @@
 }
 
 .advantage__item--big-counter:before{
+  position: absolute;
   counter-increment: advantage;
   content: "— " counter(advantage) " —";
   color: #FFFFFF;
