@@ -1,12 +1,25 @@
-.catalog-header__title{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
+.catalog-header {
+  margin-bottom: 42px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 480px;
+    margin: 0 auto 63px auto;
+    padding-top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+    margin: 0 auto 65px auto;
+  }
 }
 
-.catalog-header__text{
+.catalog-header__title {
+  .font-title();
+  margin: 0;
+  text-align: center;
+}
+
+.catalog-header__text {
   text-transform: uppercase;
+  text-align: center;
 }

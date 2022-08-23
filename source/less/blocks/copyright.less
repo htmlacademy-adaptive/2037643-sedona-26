@@ -1,13 +1,31 @@
-.copyright__text{
+.copyright__text {
   color: #000000;
   text-transform: uppercase;
 }
 
-.copyright{
+.copyright {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover .copyright__icon {
+    fill: @blue-sedona;
+  }
+
+  &:hover .copyright__text {
+    color: @blue-sedona;
+  }
+
+  &:active .copyright__icon {
+    fill: #b3b3b3;
+  }
+
+  &:active .copyright__text {
+    color: #b3b3b3;
+  }
 }
 
-.copyright__icon{
+.copyright__icon {
   width: 27px;
   height: 34px;
   fill: #000000;

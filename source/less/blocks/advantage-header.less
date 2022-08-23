@@ -1,11 +1,33 @@
-.advantage-header__title{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin: 0;
+.advantage-header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 545px;
+    padding-top: 47px;
+    padding-bottom: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 45px;
+  }
 }
 
-.advantage-header__text{
+.advantage-header__title {
+  .font-title();
+  text-align: center;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.advantage-header__text {
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }

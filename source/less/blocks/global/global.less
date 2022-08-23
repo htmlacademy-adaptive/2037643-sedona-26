@@ -1,3 +1,39 @@
 @mobile-width: 320px;
+@mobile-width-only: 767px;
 @tablet-width: 768px;
-@desktop-width: 1280px;
+@desktop-width: 1200px;
+
+@blue-sedona: #81b3d2;
+@input-color: #f2f2f2;
+
+.button-style() {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: @blue-sedona;
+  border: none;
+  min-height: 58px;
+  padding: 0;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@bg-color-promo: #273746;
+
+.font-title() {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
