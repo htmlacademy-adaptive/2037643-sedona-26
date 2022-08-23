@@ -1,19 +1,8 @@
-.catalog{
-  width: @mobile-width;
-  margin: 0 auto;
-  background-color: #FFFFFF;
-
-  @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
-  }
-}
-
-.catalog__list{
+.catalog__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -27,7 +16,32 @@
   }
 }
 
-.catalog__item--first-child{
+.catalog__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -24px;
+    background-color: #e5e5e5;
+    height: 1px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--margin-top {
+    margin-top: 50px;
+  }
+}
+
+.catalog__item--first-child {
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
   }
@@ -37,13 +51,61 @@
   }
 }
 
-.catalog__item-title{
+.catalog__item-title {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    margin: 0;
+  }
 }
 
-.catalog__item-like{
+.catalog__item-author {
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+.catalog__item-like {
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.catalog__like-icon {
+  fill: rgba(0, 0, 0, 0.3);
+
+  @media (min-width: @desktop-width) {
+    fill: rgba(255, 255, 255, 1);
+  }
+}
+
+.catalog__item-bottom {
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+    height: 80px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+
+    &--another-color {
+      background-color: #eaeaea;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }

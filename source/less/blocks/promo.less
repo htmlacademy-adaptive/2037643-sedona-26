@@ -1,21 +1,17 @@
-.promo{
-  background-color: #273746;
-  background-image: url(../../img/promo-divider.png) , url(../../img/promo-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom, center;
-  width: @mobile-width;
-  margin: 0 auto;
+.promo__wrapper {
+  position: relative;
   display: flex;
+  background-color: @bg-color-promo;
+  background-image: url(../../img/promo-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
 
   @media (min-width: @tablet-width) {
-    width: @tablet-width;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: @desktop-width;
+    clip-path: polygon(100% 0, 100% 90%, 95% 90%, 95% 85%, 50% 100%, 5% 85%, 5% 91%, 0 90%, 0 0);
   }
 }
 
-.promo-text{
+.promo-text {
   margin: 85px auto 85px auto;
 }
