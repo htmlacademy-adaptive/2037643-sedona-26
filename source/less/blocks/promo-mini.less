@@ -1,16 +1,34 @@
 .promo-mini__wrapper {
-  background-image: url(../img/promo-mini-bg.jpg);
+  background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
+  background-size: 902px auto;
   display: flex;
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  clip-path: polygon(100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
   background-color: @bg-color-promo;
 
   @media (min-width: @tablet-width) {
-    clip-path: polygon(100% 0, 100% 90%, 95% 90%, 95% 85%, 50% 100%, 5% 85%, 5% 91%, 0 90%, 0 0);
+    background-size: 1200px auto;
+    clip-path: polygon(100% 0, 100% 88%, 96% 89%, 96% 80%, 50% 100%, 4% 80%, 4% 89%, 0 88%, 0 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    clip-path: polygon(100% 1%, 100% 81%, 79% 90%, 79% 81%, 50% 100%, 21% 81%, 21% 90%, 0 81%, 0 0);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/promo-bg@2x.jpg);
   }
 }
 
 .promo-mini__img {
-  margin: 50px auto 67px auto;
+  margin: 50px auto 69px auto;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 201px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 212px;
+  }
 }
