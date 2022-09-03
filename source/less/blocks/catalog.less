@@ -1,18 +1,20 @@
 .catalog__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
+    width: 648px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto;
+    width: 100%;
   }
 }
 
@@ -31,6 +33,10 @@
     left: 50%;
     transform: translateX(-50%);
 
+    &-img {
+      display: block;
+    }
+
     @media (min-width: @tablet-width) {
       display: none;
     }
@@ -38,6 +44,10 @@
 
   &--margin-top {
     margin-top: 50px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -52,7 +62,7 @@
 }
 
 .catalog__item-title {
-  font-weight: 700;
+  font-family: "PT Sans bold", "Arial", sans-serif;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
@@ -71,7 +81,7 @@
 }
 
 .catalog__item-like {
-  font-weight: 700;
+  font-family: "PT Sans bold", "Arial", sans-serif;
   color: #000000;
 
   @media (min-width: @desktop-width) {
@@ -92,13 +102,22 @@
     background-color: #f2f2f2;
     height: 80px;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     padding: 0 20px;
+
+    &--big {
+      width: 100%;
+    }
+
+    &--small {
+      width: 324px;
+
+      @media (min-width: @desktop-width) {
+        width: 400px;
+      }
+    }
 
     &--another-color {
       background-color: #eaeaea;
@@ -107,5 +126,45 @@
 
   @media (min-width: @desktop-width) {
     background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.catalog-picture-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  &--small {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+    width: 1200px;
+
+    &--small {
+      height: 267px;
+      width: 400px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 400px;
+
+    &--small {
+      height: 267px;
+      width: 324px;
+    }
   }
 }

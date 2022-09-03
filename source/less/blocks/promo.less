@@ -2,16 +2,30 @@
   position: relative;
   display: flex;
   background-color: @bg-color-promo;
-  background-image: url(../../img/promo-bg.jpg);
+  background-image: url(../img/promo-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+  background-size: 905px auto;
+  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 
   @media (min-width: @tablet-width) {
-    clip-path: polygon(100% 0, 100% 90%, 95% 90%, 95% 85%, 50% 100%, 5% 85%, 5% 91%, 0 90%, 0 0);
+    background-size: 1200px auto;
+    clip-path: polygon(100% 0, 100% 93%, 96% 93%, 96% 89%, 50% 100%, 4% 89%, 4% 93%, 0 93%, 0 0);
+  }
+
+  @media (min-width: @desktop-width) {
+    clip-path: polygon(100% 0, 100% 89%, 79% 93%, 79% 89%, 50% 100%, 21% 89%, 21% 93%, 0 89%, 0 0);
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/promo-bg@2x.jpg);
   }
 }
 
 .promo-text {
-  margin: 85px auto 85px auto;
+  margin: 85px auto 90px auto;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 219px;
+  }
 }
