@@ -13,7 +13,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    clip-path: polygon(100% 1%, 100% 81%, 79% 90%, 79% 81%, 50% 100%, 21% 81%, 21% 90%, 0 81%, 0 0);
+    clip-path: polygon(100% 0, 100% 81%, 79% 90%, 79% 81%, 50% 100%, 21% 81%, 21% 90%, 0 81%, 0 0);
   }
 
   @media (min-resolution: 2dppx) {
@@ -23,12 +23,16 @@
 
 .promo-mini__img {
   margin: 50px auto 69px auto;
+  width: 229px;
+  height: 39px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 201px;
+    margin: 94px auto 117px auto;
+    width: 456px;
+    height: 78px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 212px;
+    margin: 101px auto 120px auto;
   }
 }

@@ -33,8 +33,6 @@
   }
 
   &--icon {
-    letter-spacing: -2px;
-
     @media (min-width: @tablet-width) {
       margin-bottom: 22px;
     }
@@ -54,8 +52,6 @@
   margin: 0;
 
   &--icon {
-    letter-spacing: -1px;
-
     & br {
       display: none;
     }
@@ -86,13 +82,13 @@
 
 .advantage__item--big-title {
   color: #ffffff;
-  margin: 54px auto 11px auto;
+  margin: 34px 7px 11px 0;
   text-align: center;
   order: -1;
 }
 
 .advantage__item-wrapper--with-icon {
-  margin-left: 64px;
+  margin-left: 47px;
   max-width: 232px;
 
   @media (min-width: @tablet-width) {
@@ -111,7 +107,7 @@
 
 .advantage__item--big-text {
   color: #ffffff;
-  margin: 10px 0 35px 0;
+  margin: 17px 6px 39px 0;
 
   & br {
     display: none;
@@ -135,7 +131,7 @@
 .advantage__item--icon-house::after {
   content: "";
   position: absolute;
-  left: 17px;
+  left: 0;
   top: -8px;
   background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
@@ -154,7 +150,7 @@
 
 .advantage__item--icon-burger {
   margin-top: 30px;
-  margin-left: 70px;
+  margin-left: 52px;
 
   @media (min-width: @tablet-width) {
     margin: 160px auto 0 auto;
@@ -164,7 +160,7 @@
 .advantage__item--icon-burger::after {
   content: "";
   position: absolute;
-  left: 18px;
+  left: 0;
   top: -7px;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
@@ -182,7 +178,9 @@
 }
 
 .advantage__item--icon-gift {
-  margin-top: 30px;
+  margin-top: 28px;
+  margin-left: 44px;
+  margin-bottom: 52px;
 
   @media (min-width: @tablet-width) {
     margin: 160px auto 0 auto;
@@ -192,7 +190,7 @@
 .advantage__item--icon-gift::after {
   content: "";
   position: absolute;
-  left: 22px;
+  left: 4px;
   top: -9px;
   background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
@@ -278,9 +276,10 @@
 
 .advantage__item--big-counter::before {
   counter-increment: advantage;
-  content: "— " counter(advantage) " —";
+  content: "— №" counter(advantage) " —";
   color: #ffffff;
-  margin: 0 auto;
+  margin: 0 6px 0 0;
+  text-align: center;
 }
 
 .advantage__item-wrapper {

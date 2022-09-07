@@ -35,7 +35,9 @@
         </ul>
       </nav>
       <a class="logo-sedona main-header__logo-sedona" href="index.html">
-        <img src="img/logo_sedona.svg" width="185" height="96" alt="Логотип Седоны.">
+        <svg width="185" height="96" aria-label="Логотип Седоны.">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
       </a>
     </div>
   </header>
@@ -47,13 +49,16 @@
         <div class="wrapper">
           <div class="promo-mini__wrapper">
             <h2 class="visually-hidden">Промо</h2>
-            <img class="promo-mini__img" src="img/form_promo_text.svg" width="229" height="39" alt="Надпись SEDONA.">
+            <svg class="promo-mini__img" width="229" height="39" aria-label="Надпись SEDONA.">
+              <use xlink:href="img/sprite.svg#icon-promo-mini-text"></use>
+            </svg>
           </div>
         </div>
       </section>
 
       <section class="form-review">
-          <div class="wrapper wrapper--form-review">
+          <div class="wrapper">
+            <div class="wrapper__content-form">
               <header class="form-review__header">
                 <h2 class="form-review__title">Оставьте свой отзыв</h2>
                 <p class="form-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -86,9 +91,9 @@
                   </div>
                 </fieldset>
                 <fieldset class="form-review__fieldset form-review__fieldset--impression">
-                  <legend class="form-review__legend form-review__legend--stripes">Ваше Общее впечатление:</legend>
+                  <legend class="form-review__legend form-review__legend--impression form-review__legend--stripes">Ваше Общее впечатление:</legend>
                   <div class="form-review__fieldset-wrapper form-review__fieldset-wrapper--impression">
-                    <div class="form-review__input-wrapper form-review__input-wrapper--margin-top">
+                    <div class="form-review__input-wrapper">
                       <input class="form-review__radio" name="impression" type="radio" id="positive" checked>
                       <label class="form-review__label-thick form-review__label--margin-left" for="positive">Скорее положительное</label>
                     </div>
@@ -109,7 +114,9 @@
                       <label class="form-review__label-thick form-review__label--flex form-review__label--margin-left" for="Devils_Bridge">
                         <input class="form-review__checkbox" type="checkbox" id="Devils_Bridge" checked>
                         <span class="form-review__checkbox-icon"></span>
-                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M21.805 1.307 20.76.222c-.285-.296-.856-.296-1.141 0L8.298 11.957 2.403 5.843c-.286-.296-.856-.296-1.142 0L.214 6.928c-.285.295-.285.887 0 1.183l7.419 7.692c.19.197.38.197.57.197.191 0 .381-.099.571-.197L21.615 2.49c.476-.296.476-.789.19-1.183Z" /></svg>
+                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                         <span class="form-review__checkbox-description">Мост Дьявола</span>
                       </label>
                     </div>
@@ -117,7 +124,9 @@
                       <label class="form-review__label-thick form-review__label--flex form-review__label--margin-left" for="Mount_Bell">
                         <input class="form-review__checkbox" type="checkbox" id="Mount_Bell" checked>
                         <span class="form-review__checkbox-icon"></span>
-                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M21.805 1.307 20.76.222c-.285-.296-.856-.296-1.141 0L8.298 11.957 2.403 5.843c-.286-.296-.856-.296-1.142 0L.214 6.928c-.285.295-.285.887 0 1.183l7.419 7.692c.19.197.38.197.57.197.191 0 .381-.099.571-.197L21.615 2.49c.476-.296.476-.789.19-1.183Z" /></svg>
+                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                         <span class="form-review__checkbox-description">Гора-Колокол</span>
                       </label>
                     </div>
@@ -125,7 +134,9 @@
                       <label class="form-review__label-thick form-review__label--flex form-review__label--margin-left" for="slide_park">
                         <input class="form-review__checkbox" type="checkbox" id="slide_park" checked>
                         <span class="form-review__checkbox-icon"></span>
-                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M21.805 1.307 20.76.222c-.285-.296-.856-.296-1.141 0L8.298 11.957 2.403 5.843c-.286-.296-.856-.296-1.142 0L.214 6.928c-.285.295-.285.887 0 1.183l7.419 7.692c.19.197.38.197.57.197.191 0 .381-.099.571-.197L21.615 2.49c.476-.296.476-.789.19-1.183Z" /></svg>
+                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                         <span class="form-review__checkbox-description">Слайд-парк</span>
                       </label>
                     </div>
@@ -133,7 +144,9 @@
                       <label class="form-review__label-thick form-review__label--flex form-review__label--margin-left" for="red_rocks">
                         <input class="form-review__checkbox" type="checkbox" id="red_rocks">
                         <span class="form-review__checkbox-icon"></span>
-                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M21.805 1.307 20.76.222c-.285-.296-.856-.296-1.141 0L8.298 11.957 2.403 5.843c-.286-.296-.856-.296-1.142 0L.214 6.928c-.285.295-.285.887 0 1.183l7.419 7.692c.19.197.38.197.57.197.191 0 .381-.099.571-.197L21.615 2.49c.476-.296.476-.789.19-1.183Z" /></svg>
+                        <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
+                          <use xlink:href="img/sprite.svg#icon-tick"></use>
+                        </svg>
                         <span class="form-review__checkbox-description">Красные скалы</span>
                       </label>
                     </div>
@@ -148,6 +161,7 @@
                   <p class="form-review__bottom-inscription">* — обязательные поля</p>
                 </div>
               </form>
+            </div>
           </div>
       </section>
     </main>
