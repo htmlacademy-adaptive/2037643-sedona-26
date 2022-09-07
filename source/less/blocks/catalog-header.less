@@ -1,25 +1,35 @@
 .catalog-header {
-  margin-bottom: 42px;
+  margin-bottom: 68px;
 
   @media (min-width: @tablet-width) {
     max-width: 480px;
-    margin: 0 auto 63px auto;
-    padding-top: 62px;
+    margin: 0 auto 87px auto;
+    padding-top: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 100px;
-    margin: 0 auto 65px auto;
+    padding-top: 68px;
+    margin: 0 auto 88px auto;
   }
 }
 
 .catalog-header__title {
   .font-title();
-  margin: 0;
+  margin: 31px 0 0 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .catalog-header__text {
   text-transform: uppercase;
   text-align: center;
+  margin: 25px 0 0 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 33px auto 0 auto;
+    width: 439px;
+  }
 }

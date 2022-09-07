@@ -31,7 +31,6 @@
   text-align: center;
   margin-bottom: 20px;
   background-color: #ffffff;
-  min-width: 300px;
 
   @media (min-width: @tablet-width) {
     max-width: 300px;
@@ -48,7 +47,7 @@
       top: -24px;
       transform: translateX(-50%);
       height: 1px;
-      width: 320px;
+      width: 100%;
       background-color: #e5e5e5;
 
       @media (min-width: @tablet-width) {
@@ -74,6 +73,10 @@
   &--contacts {
     margin-bottom: 18px;
   }
+
+  &--impression {
+    margin-bottom: 30px;
+  }
 }
 
 .form-review__input-text {
@@ -90,7 +93,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: 26px;
+    right: 0;
     background-color: #e6e6e6;
     min-width: 58px;
     min-height: 58px;
@@ -111,7 +114,7 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: 26px;
+    right: 0;
     background-color: #e6e6e6;
     min-width: 58px;
     min-height: 58px;
@@ -331,8 +334,6 @@
 }
 
 .form-review__form {
-  width: 280px;
-
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -364,6 +365,8 @@
 }
 
 .form-review__fieldset--contacts {
+  margin-bottom: 44px;
+
   @media (min-width: @tablet-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -371,6 +374,8 @@
 }
 
 .form-review__fieldset--impression {
+  margin-bottom: 58px;
+
   @media (min-width: @tablet-width) {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -432,7 +437,7 @@
 }
 
 .form-review__input-wrapper--margin-top {
-  margin-top: 15px;
+  margin-top: 36px;
 
   @media (min-width: @desktop-width) {
     margin-top: 0;
