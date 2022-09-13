@@ -1,4 +1,22 @@
+.map {
+  margin-bottom: 11px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .map-iframe {
   border: none;
   display: block;
+}
+
+.map-point {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }

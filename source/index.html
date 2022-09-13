@@ -48,7 +48,7 @@
           <div class="wrapper">
             <div class="promo__wrapper">
               <h2 class="visually-hidden">Промо</h2>
-                <svg class="promo-text" width="282" height="214" aria-label="Добро пожаловать в Седону.">
+                <svg class="promo-text" width="282" height="214" aria-label="Добро пожаловать в Седону." viewBox="0 0 282 214">
                   <use xlink:href="img/sprite.svg#icon-promo-text"></use>
                 </svg>
             </div>
@@ -70,8 +70,8 @@
                 <div class="wrapper__content-index">
                   <div class="advantage__item-wrapper">
                     <div class="advantage__item-content advantage__item--big-counter">
-                      <h3 class="advantage__item-title advantage__item--big-title">Настоящий<br> городок</h3>
-                      <p class="advantage__item-text advantage__item--big-text advantage__item-text--align-center">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                      <h3 class="advantage__item-title advantage__item-title--real-town advantage__item--big-title">Настоящий городок</h3>
+                      <p class="advantage__item-text advantage__item-text--real-town advantage__item--big-text advantage__item-text--align-center">Седона не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                   </div>
                 </div>
@@ -86,11 +86,11 @@
                 </picture>
               </div>
 
-              <div class="wrapper__content-index">
+              <div class="wrapper__content-index wrapper__advantage-item-with-icon">
                 <div class="advantage__item advantage__item--icon">
                   <div class="advantage__item-wrapper--with-icon advantage__item--icon-house">
                     <h3 class="advantage__item-title advantage__item-title--icon advantage__item-title--align">Жилье</h3>
-                    <p class="advantage__item-text advantage__item-text--icon">Рекомендуем пожить в<br> настоящем мотеле, все как в<br> кино!</p>
+                    <p class="advantage__item-text advantage__item-text--icon">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
                 </div>
                 <div class="advantage__item advantage__item--icon">
@@ -110,8 +110,8 @@
               <div class="advantage__item advantage__item--big">
                 <div class="advantage__item-wrapper">
                   <div class="advantage__item-content advantage__item--big-counter">
-                    <h3 class="advantage__item-title advantage__item--big-title">там есть<br> мост дьявола</h3>
-                    <p class="advantage__item-text advantage__item--big-text advantage__item-text--align-center">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+                    <h3 class="advantage__item-title advantage__item--big-title advantage__item-title--devil-bridge">там есть мост дьявола</h3>
+                    <p class="advantage__item-text advantage__item-text--devil-bridge advantage__item--big-text advantage__item-text--align-center">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
                   </div>
                 </div>
                 <div class="advantage__img--order">
@@ -123,24 +123,27 @@
                 </div>
               </div>
 
-              <div class="advantage__item advantage__item--counter">
-                <div class="advantage__item-content--with-counter">
-                  <h3 class="advantage__item-title">Небольшая площадь</h3>
-                  <p class="advantage__item-text advantage__item-text--align-center">Все интересные места находятся очень близко</p>
+              <div class="wrapper__advantage-item-counter">
+                <div class="advantage__item advantage__item--counter">
+                  <div class="advantage__item-content--with-counter">
+                    <h3 class="advantage__item-title advantage__item-title--with-counter-first-child">Небольшая площадь</h3>
+                    <p class="advantage__item-text advantage__item-text--with-counter-first-child advantage__item-text--align-center">Все интересные места находятся очень близко</p>
+                  </div>
+                </div>
+                <div class="advantage__item advantage__item--counter">
+                  <div class="advantage__item-content--with-counter">
+                    <h3 class="advantage__item-title advantage__item-title--with-counter">Красивая дорога</h3>
+                    <p class="advantage__item-text advantage__item-text--with-counter advantage__item-text--align-center">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                  </div>
+                </div>
+                <div class="advantage__item advantage__item--counter">
+                  <div class="advantage__item-content--with-counter">
+                    <h3 class="advantage__item-title advantage__item-title--with-counter">Мало туристов</h3>
+                    <p class="advantage__item-text advantage__item-text--with-counter advantage__item-text--align-center">Большинство едет в гранд каньон и толпится там</p>
+                  </div>
                 </div>
               </div>
-              <div class="advantage__item advantage__item--counter">
-                <div class="advantage__item-content--with-counter">
-                  <h3 class="advantage__item-title">Красивая<br> дорога</h3>
-                  <p class="advantage__item-text advantage__item-text--align-center">Ехать в седону из<br> Лас-Вегаса совсем<br> не&nbsp;скучно!</p>
-                </div>
-              </div>
-              <div class="advantage__item advantage__item--counter">
-                <div class="advantage__item-content--with-counter">
-                  <h3 class="advantage__item-title">Мало<br>туристов</h3>
-                  <p class="advantage__item-text advantage__item-text--align-center">Большинство едет в гранд каньон и толпится там</p>
-                </div>
-              </div>
+
             </div>
           </div>
         </section>
@@ -160,6 +163,9 @@
           <div class="wrapper">
             <h2 class="visually-hidden">Карта</h2>
             <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133137!2d30.315220216071793!3d59.96826598188698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1660472811337!5m2!1sru!2sru" width="100%" height="350px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <svg class="map-point" width="27" height="27" aria-hidden="true" focusable="false">
+              <use xlink:href="img/sprite.svg#icon-map-point"></use>
+            </svg>
           </div>
         </section>
     </main>
