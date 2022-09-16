@@ -87,11 +87,15 @@
   margin: 0;
 
   &--icon {
+    min-width: 245px;
+
     & br {
       display: none;
     }
 
     @media (min-width: @tablet-width) {
+      min-width: 100%;
+
       & br {
         display: block;
       }
@@ -166,7 +170,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 259px;
+      width: 270px;
       margin: 23px auto 24px auto;
     }
   }
@@ -178,7 +182,7 @@
   order: -1;
 
   @media (min-width: @tablet-width) {
-    width: 150px;
+    width: 157px;
   }
 }
 
