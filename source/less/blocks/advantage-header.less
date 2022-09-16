@@ -18,18 +18,14 @@
 .advantage-header__title {
   .font-title();
   text-align: center;
-  margin: 0;
-  margin-bottom: 35px;
-  margin-right: 7px;
-  margin-top: 1px;
+  margin: 1px 0 35px 7px;
+  max-width: 265px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 29px;
+    margin-left: 0;
     font-size: 21px;
-
-    & br {
-      display: none;
-    }
+    max-width: 100%;
   }
 }
 
