@@ -6,7 +6,7 @@
   }
 }
 
-.advantage__item--divider {
+.advantage__item-divider {
   @media (max-width: @tablet-width) {
     background-image: url("../img/advantage-divider.svg");
     background-repeat: no-repeat;
@@ -87,11 +87,15 @@
   margin: 0;
 
   &--icon {
+    min-width: 245px;
+
     & br {
       display: none;
     }
 
     @media (min-width: @tablet-width) {
+      min-width: 100%;
+
       & br {
         display: block;
       }
@@ -166,7 +170,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 259px;
+      width: 270px;
       margin: 23px auto 24px auto;
     }
   }
@@ -177,12 +181,20 @@
   text-align: center;
   order: -1;
 
+  & br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
-    width: 150px;
+    width: 157px;
+
+    & br {
+      display: block;
+    }
   }
 }
 
-.advantage__item-wrapper--with-icon {
+.advantage__item-wrapper-with-icon {
   margin-left: 47px;
   max-width: 232px;
 
@@ -214,7 +226,7 @@
   }
 }
 
-.advantage__item--icon-house {
+.advantage__item-wrapper-with-icon--house {
   margin-top: 33px;
 
   @media (min-width: @tablet-width) {
@@ -222,7 +234,7 @@
   }
 }
 
-.advantage__item--icon-house::after {
+.advantage__item-wrapper-with-icon--house::after {
   content: "";
   position: absolute;
   left: 0;
@@ -242,7 +254,7 @@
   }
 }
 
-.advantage__item--icon-burger {
+.advantage__item-wrapper-with-icon--burger {
   margin-top: 30px;
   margin-left: 52px;
 
@@ -251,7 +263,7 @@
   }
 }
 
-.advantage__item--icon-burger::after {
+.advantage__item-wrapper-with-icon--burger::after {
   content: "";
   position: absolute;
   left: 0;
@@ -271,7 +283,7 @@
   }
 }
 
-.advantage__item--icon-gift {
+.advantage__item-wrapper-with-icon--gift {
   margin-top: 28px;
   margin-left: 44px;
   margin-bottom: 52px;
@@ -281,7 +293,7 @@
   }
 }
 
-.advantage__item--icon-gift::after {
+.advantage__item-wrapper-with-icon--gift::after {
   content: "";
   position: absolute;
   left: 4px;
@@ -335,7 +347,7 @@
   }
 }
 
-.advantage__item-content--with-counter {
+.advantage__item-content-with-counter {
   display: flex;
   flex-direction: column;
 
@@ -362,7 +374,7 @@
   }
 }
 
-.advantage__item-content--with-counter::before {
+.advantage__item-content-with-counter::before {
   counter-increment: advantage;
   content: "— №" counter(advantage) " —";
   margin: 0 auto;
@@ -413,6 +425,6 @@
   display: block;
 }
 
-.advantage__img--order {
+.advantage__img-order {
   order: -1;
 }

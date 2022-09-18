@@ -8,8 +8,16 @@
 }
 
 .map-iframe {
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
   border: none;
   display: block;
+  background-position: center;
+  width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.jpg");
+  }
 }
 
 .map-point {
