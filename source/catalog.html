@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Каталог</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -65,8 +67,12 @@
           </header>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--first-child">
-              <a class="catalog-picture-wrapper" href="#">
+              <a class="catalog__picture-wrapper" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-img-1-desktop.webp 1x, img/catalog-img-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-img-1-tablet.webp 1x, img/catalog-img-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog-img-1-mobile.webp 1x, img/catalog-img-1-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog-img-1-desktop.jpg 1x, img/catalog-img-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog-img-1-tablet.jpg 1x, img/catalog-img-1-tablet@2x.jpg 2x">
                   <img class="catalog__item-img" src="img/catalog-img-1-mobile.jpg" srcset="img/catalog-img-1-mobile@2x.jpg 2x" alt="Дорога.">
@@ -86,15 +92,19 @@
               </div>
             </li>
             <li class="catalog__item catalog__item--margin-top">
-              <a class="catalog-picture-wrapper--small" href="#">
+              <a class="catalog__picture-wrapper-small" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-img-2-desktop.webp 1x, img/catalog-img-2-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-img-2-tablet.webp 1x, img/catalog-img-2-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog-img-2-mobile.webp 1x, img/catalog-img-2-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog-img-2-desktop.jpg 1x, img/catalog-img-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog-img-2-tablet.jpg 1x, img/catalog-img-2-tablet@2x.jpg 2x">
                   <img class="catalog__item-img" src="img/catalog-img-2-mobile.jpg" srcset="img/catalog-img-2-mobile@2x.jpg 2x" alt="Местная растительность.">
                 </picture>
               </a>
               <div class="catalog__item-bottom catalog__item-bottom--small">
-                <div>
+                <div class="catalog__item-bottom-text">
                   <h3 class="catalog__item-title">Местная растительность</h3>
                   <p class="catalog__item-author">Автор фото: Сергей</p>
                 </div>
@@ -107,8 +117,12 @@
               </div>
             </li>
             <li class="catalog__item catalog__item--margin-top">
-              <a class="catalog-picture-wrapper--small" href="#">
+              <a class="catalog__picture-wrapper-small" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-img-3-desktop.webp 1x, img/catalog-img-3-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-img-3-tablet.webp 1x, img/catalog-img-3-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog-img-3-mobile.webp 1x, img/catalog-img-3-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog-img-3-desktop.jpg 1x, img/catalog-img-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog-img-3-tablet.jpg 1x, img/catalog-img-3-tablet@2x.jpg 2x">
                   <img class="catalog__item-img" src="img/catalog-img-3-mobile.jpg" srcset="img/catalog-img-3-mobile@2x.jpg 2x" alt="Дорога на север.">
@@ -123,13 +137,17 @@
                   <svg class="catalog__like-icon" width="23" height="21">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
-                  <span span class="catalog__item-like">96</span>
+                  <span class="catalog__item-like">96</span>
                 </div>
               </div>
             </li>
             <li class="catalog__item catalog__item--margin-top">
-              <a class="catalog-picture-wrapper--small" href="#">
+              <a class="catalog__picture-wrapper-small" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/catalog-img-4-desktop.webp 1x, img/catalog-img-4-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog-img-4-tablet.webp 1x, img/catalog-img-4-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/catalog-img-4-mobile.webp 1x, img/catalog-img-4-mobile@2x.webp 2x">
+
                   <source media="(min-width: 1200px)" srcset="img/catalog-img-4-desktop.jpg 1x, img/catalog-img-4-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/catalog-img-4-tablet.jpg 1x, img/catalog-img-4-tablet@2x.jpg 2x">
                   <img class="catalog__item-img" src="img/catalog-img-4-mobile.jpg" srcset="img/catalog-img-4-mobile@2x.jpg 2x" alt="Мост дьявола.">
@@ -190,7 +208,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link button" href="#" aria-label="Мы в Ютубе">
+            <a class="social-list__link button" href="#" aria-label="Мы в Ютубе.">
               <svg class="social-list__icon" width="20" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>

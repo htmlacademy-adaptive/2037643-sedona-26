@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Оставить отзыв</title>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
@@ -63,55 +65,59 @@
                 <p class="form-review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
               </header>
               <form class="form-review__form" action="#" method="post">
-                <fieldset class="form-review__fieldset form-review__fieldset--user-name">
-                  <legend class="form-review__legend form-review__legend--user-name form-review__legend--stripes">Представьтесь:</legend>
-                  <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--user-name-first-child form-review__input-wrapper--flex">
-                    <label class="form-review__label form-review__label--user-name" for="name">Имя*:</label>
-                    <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="name">
-                  </div>
-                  <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--flex">
-                    <label class="form-review__label form-review__label--user-name" for="surname">Фамилия*:</label>
-                    <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="surname">
-                  </div>
-                  <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--flex">
-                    <label class="form-review__label form-review__label--user-name" for="patronymic">Отчество:</label>
-                    <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="patronymic">
-                  </div>
-                </fieldset>
-                <fieldset class="form-review__fieldset form-review__fieldset--contacts">
-                  <legend class="form-review__legend form-review__legend--contacts form-review__legend--stripes">Контактная информация:</legend>
-                  <div class="form-review__input-wrapper form-review__input-wrapper--contacts form-review__input-wrapper--flex form-review__input-text--phone">
-                    <label class="form-review__label form-review__label--contacts" for="tel">Контактный телефон*:</label>
-                    <input class="form-review__input-text form-review__input--style form-review__input-text--with-icon" type="tel" id="tel" placeholder="Введите телефон">
-                  </div>
-                  <div class="form-review__input-wrapper form-review__input-wrapper--contacts form-review__input-wrapper--flex form-review__input-text--email">
-                    <label class="form-review__label form-review__label--contacts" for="email">Электронная почта*:</label>
-                    <input class="form-review__input-text form-review__input--style form-review__input-text--with-icon" type="email" id="email" placeholder="Введите e-mail">
+                <fieldset class="form-review__fieldset form-review__fieldset--user-name form-review__fieldset--stripes">
+                  <legend class="form-review__legend form-review__legend--user-name">Представьтесь:</legend>
+                  <div class="form-review__fieldset-wrapper">
+                    <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--user-name-first-child form-review__input-wrapper--flex">
+                      <label class="form-review__label form-review__label--user-name" for="name">Имя*:</label>
+                      <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="name" value="Пётр">
+                    </div>
+                    <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--flex">
+                      <label class="form-review__label form-review__label--user-name" for="surname">Фамилия*:</label>
+                      <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="surname" value="Пустота">
+                    </div>
+                    <div class="form-review__input-wrapper form-review__input-wrapper--user-name form-review__input-wrapper--flex">
+                      <label class="form-review__label form-review__label--user-name" for="patronymic">Отчество:</label>
+                      <input class="form-review__input-text form-review__input-text--user-name form-review__input--style" type="text" id="patronymic" value="Викторович">
+                    </div>
                   </div>
                 </fieldset>
-                <fieldset class="form-review__fieldset form-review__fieldset--impression">
-                  <legend class="form-review__legend form-review__legend--impression form-review__legend--stripes form-review__legend--stripes-tablet-desktop">Ваше Общее впечатление:</legend>
+                <fieldset class="form-review__fieldset form-review__fieldset--contacts form-review__fieldset--stripes">
+                  <legend class="form-review__legend form-review__legend--contacts">Контактная информация:</legend>
+                  <div class="form-review__fieldset-wrapper">
+                    <div class="form-review__input-wrapper form-review__input-wrapper--contacts form-review__input-wrapper--flex form-review__input-text--phone">
+                      <label class="form-review__label form-review__label--contacts" for="tel">Контактный телефон*:</label>
+                      <input class="form-review__input-text form-review__input--style form-review__input-text--with-icon" type="tel" id="tel" placeholder="Введите телефон">
+                    </div>
+                    <div class="form-review__input-wrapper form-review__input-wrapper--contacts form-review__input-wrapper--flex form-review__input-text--email">
+                      <label class="form-review__label form-review__label--contacts" for="email">Электронная почта*:</label>
+                      <input class="form-review__input-text form-review__input--style form-review__input-text--with-icon" type="email" id="email" placeholder="Введите e-mail">
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="form-review__fieldset form-review__fieldset--impression form-review__fieldset--impression-stripes">
+                  <legend class="form-review__legend form-review__legend--impression form-review__legend--stripes-tablet-desktop">Ваше Общее впечатление:</legend>
                   <div class="form-review__fieldset-wrapper form-review__fieldset-wrapper--impression">
                     <div class="form-review__input-wrapper form-review__input-wrapper--impression">
-                      <input class="form-review__radio" name="impression" type="radio" id="positive" checked>
+                      <input class="form-review__radio" name="impression" type="radio" id="positive" value="positive" checked>
                       <label class="form-review__label-thick form-review__label--margin-left" for="positive">Скорее положительное</label>
                     </div>
                     <div class="form-review__input-wrapper form-review__input-wrapper--impression form-review__input-wrapper--margin-top">
-                      <input class="form-review__radio" name="impression" type="radio" id="negative">
+                      <input class="form-review__radio" name="impression" type="radio" id="negative" value="negative">
                       <label class="form-review__label-thick form-review__label--margin-left" for="negative">Скорее отрицательное</label>
                     </div>
                     <div class="form-review__input-wrapper form-review__input-wrapper--impression form-review__input-wrapper--margin-top">
-                      <input class="form-review__radio" name="impression" type="radio" id="no_answer">
+                      <input class="form-review__radio" name="impression" type="radio" id="no_answer" value="no_answer">
                       <label class="form-review__label-thick form-review__label--margin-left" for="no_answer">Затрудняюсь ответить</label>
                     </div>
                   </div>
                 </fieldset>
-                <fieldset class="form-review__fieldset form-review__fieldset--attraction">
-                  <legend class="form-review__legend form-review__legend--stripes form-review__legend--stripes-tablet-desktop">Посещенные достопримечательности:</legend>
+                <fieldset class="form-review__fieldset form-review__fieldset--attraction form-review__fieldset--attraction-stripes">
+                  <legend class="form-review__legend form-review__legend--stripes-tablet-desktop form-review__legend--stripes-tablet-desktop-attraction">Посещенные достопримечательности:</legend>
                   <div class="form-review__fieldset-wrapper form-review__fieldset-wrapper--attraction">
                     <div class="form-review__input-wrapper">
                       <label class="form-review__label-thick form-review__label--flex" for="Devils_Bridge">
-                        <input class="form-review__checkbox" type="checkbox" id="Devils_Bridge" checked>
+                        <input class="form-review__checkbox" type="checkbox" id="Devils_Bridge" name="attraction" value="Devils_Bridge" checked>
                         <span class="form-review__checkbox-icon"></span>
                         <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
                           <use xlink:href="img/sprite.svg#icon-tick"></use>
@@ -121,7 +127,7 @@
                     </div>
                     <div class="form-review__input-wrapper form-review__input-wrapper--checkbox">
                       <label class="form-review__label-thick form-review__label--flex" for="Mount_Bell">
-                        <input class="form-review__checkbox" type="checkbox" id="Mount_Bell" checked>
+                        <input class="form-review__checkbox" type="checkbox" id="Mount_Bell" name="attraction" value="Mount_Bell" checked>
                         <span class="form-review__checkbox-icon"></span>
                         <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
                           <use xlink:href="img/sprite.svg#icon-tick"></use>
@@ -131,7 +137,7 @@
                     </div>
                     <div class="form-review__input-wrapper form-review__input-wrapper--checkbox">
                       <label class="form-review__label-thick form-review__label--flex" for="slide_park">
-                        <input class="form-review__checkbox" type="checkbox" id="slide_park" checked>
+                        <input class="form-review__checkbox" type="checkbox" id="slide_park" name="attraction" value="slide_park" checked>
                         <span class="form-review__checkbox-icon"></span>
                         <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
                           <use xlink:href="img/sprite.svg#icon-tick"></use>
@@ -141,7 +147,7 @@
                     </div>
                     <div class="form-review__input-wrapper form-review__input-wrapper--checkbox">
                       <label class="form-review__label-thick form-review__label--flex" for="red_rocks">
-                        <input class="form-review__checkbox" type="checkbox" id="red_rocks">
+                        <input class="form-review__checkbox" type="checkbox" id="red_rocks" name="attraction" value="red_rocks">
                         <span class="form-review__checkbox-icon"></span>
                         <svg class="form-review__checkbox-checked" aria-hidden="true" focusable="false" width="22" height="16">
                           <use xlink:href="img/sprite.svg#icon-tick"></use>
@@ -151,9 +157,11 @@
                     </div>
                   </div>
                 </fieldset>
-                <fieldset class="form-review__fieldset form-review__fieldset--emotions">
-                  <legend class="form-review__legend form-review__legend--stripes form-review__legend--stripes-tablet-desktop">Опишите свои эмоции:</legend>
-                  <textarea class="form-review__textarea form-review__input--style" name="text" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                <fieldset class="form-review__fieldset form-review__fieldset--emotions form-review__fieldset--stripes">
+                  <legend class="form-review__legend form-review__legend--stripes-tablet-desktop form-review__legend--stripes-tablet-desktop-emotions">Опишите свои эмоции:</legend>
+                  <div class="form-review__fieldset-wrapper">
+                    <textarea class="form-review__textarea form-review__input--style" name="text" cols="30" rows="5" placeholder="Опишите подробно все свои восторги "></textarea>
+                  </div>
                 </fieldset>
                 <div class="form-review__form-bottom">
                   <button class="form-review__button-submit button" type="submit">Отправить отзыв</button>
@@ -183,7 +191,7 @@
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link button" href="#" aria-label="Мы в Ютубе">
+            <a class="social-list__link button" href="#" aria-label="Мы в Ютубе.">
               <svg class="social-list__icon" width="20" height="14" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
               </svg>
